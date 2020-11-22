@@ -1,5 +1,39 @@
 body {
   font-family: "Libre Baskerville", serif;
-  color: #2251ad;
+  color: #2251ae;
   background-color: #dce7fd;
+}
+
+/* Navbar Styles */
+nav {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 3px 10px 2px #eaeaea;
+  z-index: 2;
+}
+
+#logo {
+  height: 35px;
+  width: auto;
+}
+
+.button {
+  background-color: none;
+  border: 3px solid #2251ae;
+  border-radius: 8px;
+  color: #2251ae;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2251ae;
+  color: white;
 }
