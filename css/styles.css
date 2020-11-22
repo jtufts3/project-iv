@@ -56,19 +56,19 @@ a:link {
 }
 
 #slide-2 {
-  background: #fff1f0;
+  background: #7d959c;
 }
 
 #slide-3 {
-  background: #dce7fd;
+  background: #fff1f0;
 }
 
 #slide-4 {
-  background: #e76d60;
+  background: #dce7fd;
 }
 
 #slide-5 {
-  background: #dce7fd;
+  background: #7d959c;
 }
 
 #slide-6 {
@@ -86,6 +86,11 @@ nav {
   box-shadow: 2px 3px 10px 2px #eaeaea00;
   z-index: 2;
   background: transparent !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #logo {
