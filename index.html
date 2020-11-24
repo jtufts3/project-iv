@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Becoming a Medical Illustrator</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <script src=".//js/script.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <nav>
@@ -19,16 +23,80 @@
       /></a>
       <button id="myBtn">Sources</button>
     </nav>
+    <!--Sources Modal-->
+    <div class="sources">
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Sources used for this project:</p>
+          <h2>Images</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.freepik.com/free-vector/creative-thinking-concept-illustration_8961385.htm#page=1&query=artist&position=12"
+                >Vector Illustration: Creative Thinking</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.freepik.com/premium-vector/student-guy-studying-chemistry_8671964.htm#page=1&query=student%20chemistry&position=21"
+                >Vector Illustration: Student</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.freepik.com/free-vector/designer-concept-illustration_6170425.htm"
+                >Vector Illustration: Designer</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://ami.org/images/stories/medical-illustration/Creative-services-ALL.png"
+                >Creative Services Graph</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.freepik.com/free-vector/telecommuting-concept-illustration_7321334.htm"
+                >Vector Illustration: Telecommuting</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2b3f4244472097.58f629beadf98.gif"
+                >Heart Illustration GIF</a
+              >
+            </li>
+          </ul>
+          <h2>Information</h2>
+          <ul>
+            <li>
+              <a
+                href="https://ami.org/medical-illustration/enter-the-profession/careers"
+                >AMI Careers</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <main>
       <article>
         <div class="slides">
+          <!--Slide 1-->
           <div id="slide-1">
-            <div class="slide-pic">
-              <img
-                src="./images/thinking.jpg"
-                alt="Vector graphic of person thinking"
-              />
+            <div class="pic-container">
+              <div class="animate_animated animate__headShake">
+                <div class="slide-pic">
+                  <img
+                    src="./images/think-vector.png"
+                    alt="Vector graphic of person thinking"
+                  />
+                </div>
+              </div>
             </div>
             <div class="slide-container">
               <div class="slide-content">
@@ -45,111 +113,190 @@
                   to learn more.
                 </p>
               </div>
-              <button id="button">
-                <a href="#slide 2">Enter the profession</a>
+              <button id="button-1">
+                <a href="#slide-2">Enter the profession</a>
               </button>
             </div>
-            <!--space-->
-            <div class="sources">
-              <!-- The Modal -->
-              <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <p>Some text in the Modal..</p>
-                </div>
-              </div>
-            </div>
-            <!--space-->
           </div>
+          <!--Slide 2-->
           <div id="slide-2">
-            <div class="slide-pic">
-              <img
-                src="./images/student.jpg"
-                alt="Vector graphic of person studying science"
-              />
+            <div class="pic-container">
+              <div class="slide-pic">
+                <img
+                  src="./images/student-vector.png"
+                  alt="Vector graphic of student"
+                />
+              </div>
             </div>
             <div class="slide-container">
               <div class="slide-content">
-                <h1>Preparation for school</h1>
+                <h1>Preparation</h1>
                 <p>
                   Many medical illustrators become certified through a graduate
                   master's program, so to start preparing, students should take
                   a mix of natural sciences and arts courses in high school and
                   their undergraduate studies.
                 </p>
+                <p>
+                  Each program has its unique requirements and focuses, but
+                  students will need a strong foundation in general, biological
+                  and medical science, as well as experience in a wide range of
+                  art methods. Writing, research, and ancillary computer skills
+                  are also necessary.
+                </p>
               </div>
-              <a href="#slide-3">Next step</a>
+              <button id="button-2">
+                <a href="#slide-3">Find a program</a>
+              </button>
             </div>
           </div>
+
+          <!--Slide 3-->
           <div id="slide-3">
-            <div class="slide-pic">
-              <img
-                src="./images/designer.jpg"
-                alt="Vector graphic of designer working"
-              />
+            <div class="pic-container">
+              <div class="slide-pic">
+                <img
+                  src="./images/designer.jpg"
+                  alt="Vector graphic of designer working"
+                />
+              </div>
             </div>
             <div class="slide-container">
               <div class="slide-content">
-                <h1>Lorem, ipsum dolor.</h1>
+                <h1>Education and Certification</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia, vel.
+                  Most medical illustrators pursue Master's degrees from an
+                  accredited graduate program, of which there are three in the
+                  US and one in Canada. Entrance is competitive and students
+                  spend two years taking a mix of medical courses and arts
+                  courses.
+                </p>
+                <p>
+                  Some illustrators choose to specialize on certain types of
+                  media or specific sciences. Some also choose to become board
+                  certified.
                 </p>
               </div>
-              <a href="#slide-4">Next step</a>
+              <button id="button-3">
+                <a href="#slide-4">Choose a service</a>
+              </button>
             </div>
           </div>
+          <!--Slide 4-->
           <div id="slide-4">
-            <div class="slide-pic">
-              <img
-                src="./images/office.jpg"
-                alt="Vector graphic of office workers"
-              />
+            <div>
+              <div class="pic-container">
+                <div class="slide-pic" id="graph">
+                  <img
+                    src="./images/creative-services.png"
+                    alt="Creative Services
+                    Graph"
+                  />
+                </div>
+              </div>
+              <!-- Graph Modal -->
+              <div id="graphModal" class="modal-graph">
+                <span class="graph-close">&times;</span>
+                <img class="modal-graph-content" id="img01" />
+                <div id="graph-caption"></div>
+              </div>
             </div>
             <div class="slide-container">
               <div class="slide-content">
-                <h1>Lorem, ipsum dolor.</h1>
+                <h1>Employment</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia, vel.
+                  Medical illustrators can work in a variety of contexts, using
+                  a wide range of art methods and skills. Some choose to be
+                  self-employed while others work within small companies or even
+                  in larger commercial enterprises.
+                </p>
+                <p>
+                  Medical illustrators provide services to a variety of markets,
+                  including unvisersites, hospitals and medical practices,
+                  research insitutions, medical education, adverstising, the
+                  federal goverment, and medical legal/law firms.
                 </p>
               </div>
-              <a href="#slide-5">Next step</a>
+              <button id="button-1">
+                <a href="#slide-5">Continue learning</a>
+              </button>
             </div>
           </div>
+          <!--Slide 5-->
           <div id="slide-5">
-            <div class="slide-pic">
-              <img
-                src="./images/graph.png"
-                alt="Graph of medical illustration job roles"
-              />
+            <div class="pic-container">
+              <div class="slide-pic">
+                <img
+                  src="./images/telecom-vector.jpg"
+                  alt="Vector illutration of man working on computer"
+                />
+              </div>
             </div>
             <div class="slide-container">
               <div class="slide-content">
-                <h1>Lorem, ipsum dolor.</h1>
+                <h1>Continuing Education</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia, vel.
+                  The career of medical illustration is one of continual growth.
+                  Medical illustrators must keep up with medical research and
+                  scientific advancements in order to produce accurate work, and
+                  they must also keep up with emerging media trends as digital
+                  technology advances. Whether by pursuing formal continuing
+                  education or by learning individually, medical illustrators
+                  continually work to be able to use the latest research and
+                  advances.
                 </p>
               </div>
-              <a href="#slide-6">Next step</a>
+              <button id="button-2">
+                <a href="#slide-6">Ready?</a>
+              </button>
             </div>
           </div>
+          <!--Slide 6-->
           <div id="slide-6">
-            <div class="slide-pic">
-              <img
-                src="./images/heart-gif.gif"
-                alt="Vector graphic of person thinking"
-              />
+            <div class="pic-container">
+              <div class="slide-pic">
+                <img
+                  src="./images/heart-sketch.jpg"
+                  alt="Heartbeat
+                illustration gif"
+                />
+              </div>
             </div>
             <div class="slide-container">
               <div class="slide-content">
-                <h1>Lorem, ipsum dolor.</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia, vel.
+                  Although medical illustration is an essential field within
+                  biocommunications, it is still a fairly small profession, even
+                  on a global scale. The highly specialized nature of the work
+                  and high demand for creative services means the profession has
+                  a good employment outlook, even with so few professionals.
                 </p>
+                <p>
+                  If this profession interests you, check out some of the
+                  following for more information!
+                </p>
+                <ul>
+                  <li>
+                    <a href="https://ami.org/"
+                      >Association of Medial Illustrators</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.bca.org/"
+                      >BioCommunications Association</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.medillsb.com/"
+                      >Medical Illustration & Animation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.jbiocommunication.org/"
+                      >The Journal of Biocommunication</a
+                    >
+                  </li>
+                </ul>
               </div>
               <a href="#slide-1">Back to top</a>
             </div>
